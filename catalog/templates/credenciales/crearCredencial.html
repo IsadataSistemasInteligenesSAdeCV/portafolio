@@ -1,0 +1,53 @@
+{% extends "credenciales/credenciales.html" %}
+{% load static %}
+{% block content%}
+    <head>
+        <link rel="stylesheet" href="{% static 'css/credenciales/crearCredencial.css' %}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="formulario">
+            <img class="img" src="{% static 'img/usuario.png' %}" alt="">
+            <h1>Crear Credencial</h1>
+            <form method="post" class="form">
+                {% csrf_token %}
+                <label for="" class="text">Nombre completo:</label>
+                <input type="text" name="nombre" class="entrada">
+                <label for="" class="text">Matricula del automovil:</label>
+                <input type="text" name="matricula" class="entrada">
+                <fieldset name="op" class="opciones">
+                    <legend>Selecciona tu puesto:</legend>
+                    <div>
+                        <input type="radio" id="docente" name="drone" value="docente" checked>
+                        <label for="docente">Docnete</label>
+                    </div>
+                
+                    <div>
+                        <input type="radio" id="alumno" name="drone" value="alumno">
+                        <label for="alumno">Alumno</label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Crear">
+            </form>
+            <div class="input-group mb-3" class="qr">
+                <div class="fondoqr" id="ID_DIV">
+                    <p>{{ svg|safe }}<p>
+                </div>
+                <input type="submit" value="Descargar" class="imprimir" onclick="javascript:window.imprimirDIV('ID_DIV');">
+                
+                <script>
+                    function imprimirDIV(contenido) {
+                        var ficha = document.getElementById(contenido);
+                        var ventanaImpresion = window.open(' ', 'popUp');
+                        ventanaImpresion.document.write(ficha.innerHTML);
+                        ventanaImpresion.document.close();
+                        ventanaImpresion.print();
+                        ventanaImpresion.close();
+                    }
+                </script>
+            </div>
+            
+        </div>
+    </body>
+{% endblock %}

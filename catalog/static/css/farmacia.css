@@ -1,0 +1,367 @@
+
+.header{
+    width: 100%;
+}
+.img-fluid{
+    
+    height: 40px;
+    width: auto;
+}
+.nav-item{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.d-fles{
+    right: 10px;
+}
+.barra_1{
+    
+    width: 100%;
+    background-color: #036085;
+}
+.barra{
+    
+    background-color: #e45b22;
+}
+.barra_2{
+    
+    width: 100%;
+}
+.caja{
+    margin-left: 50px;
+    height: 25px;
+    width: 300px;
+    text-align: center;
+    font-family: sans-serif; 
+    font-size: 15px; 
+    font-weight: 450; 
+    border-radius: 5px 5px 5px 5px;
+    color: white; 
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.muro{
+    margin-left: 10%;
+    width: 80%;
+    height: 40%;
+}
+.textoMuro{
+    margin-right: 35%;
+    margin-top: -20%;
+    font-size: 60px;
+    text-align: end;
+}
+.textoMuros{
+    margin-right: 35%;
+    margin-top: -3%;
+    font-size: 60px;
+    text-align: end;
+}
+.cuerpo{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    
+    text-align: end;
+}
+.indica{
+    text-align: end;
+    margin-right: 5%;
+}
+.cantidad{
+    font-size: 80px;
+    margin-right: 5%;
+}
+.cuadro{
+    height: 56px;
+    width: 500px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 7px; 
+    font-weight: 450; 
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(3, 0, 0); 
+    background-color: #E3E3E3;
+    border: 2px solid #e3e3e3;
+    text-decoration: none;
+}
+.cuadro-text{
+    text-align: left;
+    margin-top: -4%;
+    margin-left: 10%;
+}
+.indicas{
+    text-align: end;
+    margin-right: 8%;
+}
+.chequeo{
+    height: 20px;
+    margin-right: 5%;
+    margin-top: -6%;
+}
+.seccion_1{
+    text-align: left;
+    margin-left: 8%;
+}
+.linea{
+    margin-left: 8%;
+    width: 80%;
+    border: 8px;
+}
+details{
+    margin: 10px;
+    cursor: pointer;
+}
+
+summary{
+    list-style: none;
+    
+}
+
+summary::before{
+    content: " " url("../img/mas.png");
+    margin-top: 20px;
+    padding-right:5px;
+    color: #1094c8;
+}
+
+details[open] summary::before{
+    content: " " url("../img/menos.png");
+}
+.contenedor{
+    padding: 1em;
+    width: 80%;
+}
+.contenedor .ul{
+    
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contenedor .li{
+    padding: 1em;
+    margin: 0 1em 0 0;
+    transition: all 0.5s ease;
+}
+.contenedor .li.activo{
+    background-color: aqua;
+    border-radius: 12px 12px 12px 12px;
+}
+.contenedor .subconetenedor{
+    position: absolute;
+}
+.contenedor .bloque{
+    
+    opacity: 0;
+    transform:  translateY(50%);
+    transition: all .5s ease;
+}
+.contenedor .bloque.activo{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.contenedor .li2{
+    padding: 1em;
+    margin: 0 1em 0 0;
+    transition: all 0.5s ease;
+}
+.contenedor .li2.activo{
+    background-color: aqua;
+    border-radius: 12
+    px 12px 12px 12px;
+}
+.contenedor .bloque2{
+    margin-top: 5px;
+    opacity: 0;
+    transform:  translateY(50%);
+    transition: all .5s ease;
+}
+.contenedor .bloque2.activo{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.grafica{
+    width: 100%;
+    height: auto;
+}
+table {
+    width: 30%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 0 1em 0;
+    caption-side: top;
+}
+th, td {
+    text-align: center;
+    width: 5%;
+    border-bottom: 1px solid rgb(8, 8, 8);
+}
+
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+  
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+  /* Footer links */
+  
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+  
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+  
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+  
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+  
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+  
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+}
+  
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+@media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+}
+@media (max-width: 1025px) {
+    .nav-link{
+        font-size: 10px;
+    }
+    .textoMuro{
+        font-size: 20px;
+    }
+    .textoMuros{
+       font-size: 20px;
+    }
+    .cuadro{
+        margin-top: -10px;
+    }
+    .ti{
+        font-size: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .seccion_1{
+        font-size: 18px;
+    }
+    .cuadro{
+        width: 350px;
+    }
+    .cuadro-text{
+        margin-top: -55px;
+    }
+}
+@media (max-width: 450px) {
+    .marc{
+        font-size: 11px;
+    }
+    .textoMuro{
+        font-size: 10px;
+    }
+    .cuadro{
+        width: 250px;
+        margin-top: 15px;
+    }
+   .cuadro-text{
+        margin-top: -50px;
+        font-size: 15px;
+   }
+   .cantidad{
+        font-size: 40px;
+   }
+   .h2{
+        font-size: 20px;
+    }
+    .li2{
+        font-size: 15px;
+    }
+}
+@media (max-width: 400px) {
+    .marc{
+        font-size: 8px;
+    }
+    .img-fluid{
+        width: 240px;
+    }
+    
+    .li2{
+        font-size: 12px;
+    }
+}
+@media (max-width: 350px) {
+    .img-fluid{
+        width: 180px;
+    }
+   .text-light{
+        font-size: 10px;
+   }
+    .li2{
+        font-size: 10px;
+    }
+    .caja{
+        font-size: 12px;
+    }
+}

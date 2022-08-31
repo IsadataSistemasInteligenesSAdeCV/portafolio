@@ -1,0 +1,36 @@
+{% extends "pasteleria/pasteleria.html" %}
+{% load static %}
+{% block title %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/pasteleria/cotizacion.css' %}" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <img class="img" src="{% static 'img/iconoForm.png' %}" alt="">
+        <form action="" method="POST" class="post-form" id=""form>
+            {% csrf_token %}
+            <label class="text" for="titulo">Tipo de pastel</label> <br/>
+            <select id="tipo" name="tipo" class="entrada">
+                <option value="0" selected="selected">- selecciona -</option>
+                <option value="1">Tres Chocolates</option>
+                <option value="2">Tres leches</option>
+                <option value="3">Mil hojas</option>
+                <option value="4">Queso con zarzamora</option>
+            </select>
+            <label class="text" for="cantidad">kilos</label>
+            <input type="number" name="kg" class="entrada">
+            
+            <input type="submit" value="cotizar" id="cotizar" class="boton">
+        </form>    
+            <label class="text" for="total">Total</label>
+            <p class="caja">{{ total }}</p>
+    </div>
+    <script src="{% static 'scripts/cotizar.js' %}"></script>
+</body>
+
+
+{% endblock %}

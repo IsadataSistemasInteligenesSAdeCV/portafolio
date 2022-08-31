@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!<!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/pasteleria/pasteleria.css' %}" >
+  <title>Tartufos</title>
+</head>
+<body class="background">
+   
+  <nav class="navbar container-fluid navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'pasteleria' %}"><img class="logo" src="{% static 'img/logo.png' %}" alt="logo tartufos"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'catalogoPasteleria' %}">catalogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'cotizacion' %}">cotización</a>
+          </li>
+          <li class="nav-item dropdown">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">conocenos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+  {% block title %}
+  <div class="slideshow">
+    <div class="w3-content w3-section" >
+      <img class="mySlides w3-animate-fading img" src="{% static 'img/img_rr_01.jpg' %}" >
+      <img class="mySlides w3-animate-fading img" src="{% static 'img/img_rr_02.jpg' %}" >
+      <img class="mySlides w3-animate-fading img" src="{% static 'img/img_rr_03.jpg' %}" >
+    </div>
+  </div>
+  <div class="circle"></div>
+  <h1><span>Lo</span><br/><span>más</span><br/><span>pedido</span><br/><span>por</span><br/><span>ustedes</span></h1>
+ 
+  <div class="tops">
+      <div class="top">
+        <img class="imgtop" src="{% static 'img/top1.jpg' %}" alt="">
+      </div>
+      <div class="top">
+        <img class="imgtop" src="{% static 'img/top2.jpg' %}" alt="">
+      </div>
+      <div class="top">
+        <img class="imgtop" src="{% static 'img/top3.jpg' %}" alt="">
+      </div>
+  </div>
+  {% endblock %}
+  <footer id="main-footer" class="add-padding border-top-color2">
+    
+    <div class="container">
+
+      <p>Sobre nostoros</p><br>
+    
+      <ul class="social-links text-center">
+        <li><a href="" target="_blank"><i class="fa fa-twitter green-color"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        <li><a href="" target="_blank"><i class='fa fa-twitter red-color'></i></a></li>
+      </ul>
+    
+      <p class="text-center">&copy; 2022 - Tartufos</p>
+    
+    </div>
+    
+  </footer>
+  <script src="{% static 'scripts/pasteleria.js' %}"></script>
+</body>
+
+</html>

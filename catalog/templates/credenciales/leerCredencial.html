@@ -1,0 +1,37 @@
+{% extends "credenciales/credenciales.html" %}
+{% load static %}
+{% block content%}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>	
+    <link rel="stylesheet" href="{% static 'css/credenciales/leerCredencial.css' %}">
+</head>
+<body>
+    <div class="estructura">
+        <img class="avatar" src="{% static 'img/usuario.png' %}" alt="usuario">
+        <h1 class="titulo">Escanea el codigo para registrar tu asistencia</h1>
+        <video id="preview" ></video>
+    <div>
+    <script>
+        let scanner = new Instascan.Scanner(
+            {
+                video: document.getElementById('preview')
+            }
+        );
+        scanner.addListener('scan', function(content) {
+            const text=content.split(":");
+            const texto = "Nombre: "+text[0]+" Matricula: "+text[1]+" Puesto: "+text[2];
+            alert('Escanear el contenido: ' + texto);
+            window.open(content, "_blank");
+        });
+        Instascan.Camera.getCameras().then(cameras => 
+        {
+            if(cameras.length > 0){
+                scanner.start(cameras[1]);
+            } else {
+                console.error("No existe camera en este dispositivo!");
+            }
+        });
+    </script>
+</body>
+{% endblock %}

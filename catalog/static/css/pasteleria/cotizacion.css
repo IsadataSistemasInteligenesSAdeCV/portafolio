@@ -1,0 +1,92 @@
+.contenedor{
+    height: 600px;
+    text-align: center;
+    margin-top: 5rem;
+    background-color: #f9f9f9;
+    opacity: 1;
+    background: linear-gradient(135deg, #45322e55 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(225deg, #45322e 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(315deg, #45322e55 25%, transparent 25%) 0px 0/ 42px 42px, linear-gradient(45deg, #45322e 25%, #f9f9f9 25%) 0px 0/ 42px 42px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 5rem;
+}
+.img{
+    margin-top: -16%;
+    width: 120px;
+    height: auto;  
+}
+.text{
+    font-size: 60px;
+    color: rgb(2, 0, 0); 
+    text-shadow: #ffffff 0.1em 0.1em 0.2em
+}
+.entrada{
+    text-align: center;
+    width: 90%;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+.boton {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 254, 254);
+    background-color: #45322e;
+    border: none;
+    border-radius: 40px 10px;
+    box-shadow: 0 9px #684d48;
+}
+  
+.boton:hover {background-color: #1e1310}
+
+.boton:active {
+    background-color: #1e1310;
+    box-shadow: 0 5px #50332b;
+    transform: translateY(4px);
+} 
+.caja{
+    margin: auto;
+    font-size: medium;
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 25%;
+    height: 50px;
+    width: 50%;
+    background-color: #f9f9f9;
+    border-color: #45322e;
+    border-radius: 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .text{
+        font-size: 50px;
+    }
+    .contenedor{
+        width: 50%;
+    }
+    .img{
+        margin-top: -14%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor{
+        width: 70%;
+    }
+    .img{
+        margin-top: -22%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    
+    .img{
+        margin-top: -25%;
+    }
+}

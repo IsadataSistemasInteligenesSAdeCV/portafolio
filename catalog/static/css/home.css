@@ -1,0 +1,90 @@
+body{
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23E4007C'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.titulo{
+    text-align: center;
+    font-style: helvetica;
+    margin-top: 1em;
+}
+.caja{
+    width: 90%;
+    margin-left: 7%;
+}
+.paneles{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+.panel{
+    margin-bottom: 1em;
+    background-color: #e4007c;
+    width: 400px;
+    height: 300px;
+    border-radius: 40px 0 40px 0;
+    transition: 1s;
+}
+.project1{
+    width: 350px;
+    height: 150px;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    border-radius: 1em 1em 1em 1em;
+}
+.parrafo{
+    max-width: 90%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+}
+.panel:hover{
+    transform: scale(1.3);
+    background: #c0046b;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+}
+.link:link, .link:visited,  .link:hover, .link:active{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 1050px) {
+    .paneles{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .panel{
+        width: 300px;
+    }
+    .project1{
+        width: 250px;
+        
+    }
+}
+@media (max-width: 450px) {
+    .paneles{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .panel{
+        width: 250px;
+    }
+    .project1{
+        width: 200px;
+        height: 100px;
+    }
+    .caja{
+       
+        margin-left: 20%;
+    }
+}
+@media (max-width: 350px) {
+    
+    .caja{
+        margin-left: 10%;
+    }
+}

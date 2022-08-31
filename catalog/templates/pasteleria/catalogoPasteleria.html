@@ -1,0 +1,54 @@
+{% extends "pasteleria/pasteleria.html" %}
+{% load static %}
+{% block title %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/pasteleria/catalogoPasteleria.css' %}" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="caja">
+        <div class="paneles">
+            <a class="link" href=""><div class="panel">
+                <img class="project1" src="{% static 'img/top1.jpg' %}" alt="primer proyecto">
+                <p class="parrafo">
+                    pastel de chocolate relleno de fresas.
+                </p>
+            </div></a>
+            <a class="link" href=""><div class="panel">
+                <img class="project1" src="{% static 'img/top2.jpg' %}" alt="primer proyecto">
+                <p class="parrafo">
+                   Pastel de chocolate con helado.
+                </p>
+            </div></a>
+            <a class="link" href=""><div class="panel">
+                <img class ="project1" src="{% static 'img/top3.jpg' %}" alt="primer proyecto">
+                <p class="parrafo">
+                    Pastel de fresa con caramelo.
+                </p>
+            </div></a>
+            <a class="link" href=""><div class="panel">
+                <img class="project1" src="{% static 'img/top1.jpg' %}" alt="primer proyecto">
+                <p class="parrafo">
+                    pastel de chocolate relleno de fresas.
+                </p>
+            </div></a>
+            <a class="link" href=""><div class="panel">
+                <img class="project1" src="{% static 'img/top2.jpg' %}" alt="primer proyecto">
+                <p class="parrafo">
+                   Pastel de chocolate con helado.
+                </p>
+            </div></a>
+            <a class="link" href=""><div class="panel">
+                <img class ="project1" src="{% static 'img/top3.jpg' %}" alt="primer proyecto">
+                <p class="parrafo">
+                    Pastel de fresa con caramelo.
+                </p>
+            </div></a>
+        </div>
+       
+    </div>
+</body>
+{% endblock %}

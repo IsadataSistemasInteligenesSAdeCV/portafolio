@@ -1,0 +1,53 @@
+.estructura{ 
+    background: rgb(253, 253, 253);
+    color:aliceblue;
+    width: 40%;
+    height: 700px;
+    top:5rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 10px;
+    padding: 70px 40px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.titulo{
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    margin-top: -25%;
+}
+.estructura video{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+}
+@media (max-width: 768px) {
+    
+    .estructura{
+        width: 380px;
+        height: 400px;
+    }
+}
+@media (max-width: 450px) {
+    .estructura{
+        width: 340px;
+    }
+}
+@media (max-width: 400px) {
+    .estructura{
+        width: 300px;
+    }
+}
+@media (max-width: 350px) {
+    .estructura{
+        width: 270px;
+    }
+}
